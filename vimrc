@@ -1,3 +1,7 @@
+execute pathogen#infect()
+call pathogen#helptags() 
+
+
 " All system-wide defaults are set in $VIMRUNTIME/debian.vim (usually just
 " /usr/share/vim/vimcurrent/debian.vim) and sourced by the call to :runtime
 " you can find below.  If you wish to change any of those settings, you should
@@ -43,6 +47,5 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-execute pathogen#infect()
 " Automatic intentation
 filetype indent plugin on
