@@ -47,5 +47,9 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+" spaces instead of tabs
+set expandtab
+set tabstop=4
+
 " Automatic intentation
 filetype indent plugin on
